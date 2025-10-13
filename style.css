@@ -1,47 +1,62 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
-    /* Chamando Fonte */
-    font-family: "Ubuntu", sans-serif;
-    font-size: 0.85rem;
+  /* Chamando Fonte */
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.85rem;
 
-    /* Bordas View */
-    border: solid 1px pink;
+  /* Bordas View */
+  /*border: solid 1px pink;*/
+}
+
+.cabecalho {
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  align-items: end;
+}
+
+h1 {
+  align-self: flex-end;
 }
 
 /* Layout App*/
 .container-pai {
-    width: 200px;
-    height: 200px;
+  width: 200px;
+  height: 200px;
 
-    /* FlexBox */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+  /* FlexBox */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* configurações dos Botões */
 .container-button {
-    width: 160px;
-    padding: 5px;
-
-    /* FlexBox */
-    display: flex;
-    justify-content: space-evenly;
+  width: 160px;
+  /* FlexBox */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
 }
 
 .btn {
-    cursor: pointer;
-    padding: 3px;
-    border-radius: 3px;
+  cursor: pointer;
+  width: 77px;
+}
+
+.result {
+  resize: none;
+  margin-top: 5px;
+  width: 160px;
+  padding: 3px 0px 40px 5px;
+  margin-bottom: 5px;
 }
 
 /* Desafio*/
 /* cabeçalho */
 /* Resultado */
 /* Rodapé */
-
