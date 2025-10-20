@@ -22,9 +22,25 @@ window.document.addEventListener("DOMContentLoaded", function(){
     window.document.querySelector("#btnLimpar").addEventListener("click", function(){
         document.querySelector("#input-text").value = ""; 
         document.querySelector("#result").innerHTML = "";
-});
+    });
 
+    // Botão: copiar
+    document.querySelector("#btnCopiar").addEventListener("click", function() {
+        const resultText = document.querySelector("#result").value.trim(); 
 
+        if (!resultText) {
+            alert("Não há nada para copiar!");
+            return;
+        }
+
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText(resultText)
+                .then(() => alert("Texto copiado!"))
+                .catch(() => alert("Erro ao copiar o texto."));
+        } else {
+            alert("Seu navegador não suporta cópia automática.");
+        }
+    });
 
 
 }); 
