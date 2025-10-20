@@ -49,6 +49,12 @@ h1 {
   width: 77px;
 }
 
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .result {
   resize: none;
   margin-top: 5px;
